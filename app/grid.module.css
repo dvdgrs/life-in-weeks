@@ -20,3 +20,27 @@
     height: 8px;
   }
 }
+
+@media print {
+  .grid {
+    grid-template-columns: repeat(52, 8px);
+    gap: 2px;
+  }
+
+  .cell {
+    width: 8px;
+    height: 8px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .lived {
+    background-color: #000 !important;
+    border: none !important;
+  }
+
+  .future {
+    background-color: white !important;
+    border: 1px solid #71717a !important;
+  }
+}

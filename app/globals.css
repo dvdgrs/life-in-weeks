@@ -25,3 +25,33 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@media print {
+  @page {
+    margin: 15mm;
+    size: auto;
+  }
+
+  html, body {
+    background: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  main {
+    all: unset !important;
+    display: block !important;
+  }
+
+  .grid-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
