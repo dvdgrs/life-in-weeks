@@ -1,0 +1,22 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(52, 6px);
+  gap: 1px;
+}
+
+.cell {
+  width: 6px;
+  height: 6px;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(52, 8px);
+    gap: 2px;
+  }
+
+  .cell {
+    width: 8px;
+    height: 8px;
+  }
+}
